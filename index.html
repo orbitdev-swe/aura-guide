@@ -455,204 +455,6 @@
     color: var(--text-dim);
     font-size: 12px;
   }
-  /* ── Pricing block (sits next to install CTA) ─────────────── */
-  .pricing-card {
-    margin: 0 0 48px;
-    padding: 32px;
-    background: linear-gradient(135deg, rgba(139, 109, 255, 0.12), rgba(139, 109, 255, 0.02));
-    border: 1px solid rgba(139, 109, 255, 0.3);
-    border-radius: 14px;
-    text-align: center;
-  }
-  .pricing-card .eyebrow {
-    display: inline-block;
-    background: rgba(139, 109, 255, 0.18);
-    color: var(--accent);
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 1.2px;
-    text-transform: uppercase;
-    padding: 4px 12px;
-    border-radius: 999px;
-    margin-bottom: 14px;
-  }
-  .pricing-card .price {
-    font-size: 48px;
-    font-weight: 800;
-    color: var(--text-primary);
-    letter-spacing: -1px;
-    line-height: 1.1;
-  }
-  .pricing-card .price .currency { font-size: 24px; vertical-align: top; margin-right: 4px; color: var(--text-second); font-weight: 600; }
-  .pricing-card .price .period { font-size: 16px; color: var(--text-second); font-weight: 500; letter-spacing: 0; }
-  .pricing-card .tagline {
-    color: var(--text-second);
-    margin: 8px 0 22px;
-    font-size: 14.5px;
-  }
-  .pricing-card ul.included {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto 24px;
-    max-width: 420px;
-    text-align: left;
-    display: grid;
-    gap: 10px;
-  }
-  .pricing-card ul.included li {
-    color: var(--text-primary);
-    font-size: 14px;
-    padding-left: 26px;
-    position: relative;
-  }
-  .pricing-card ul.included li::before {
-    content: "✓";
-    position: absolute;
-    left: 0;
-    color: var(--accent);
-    font-weight: 700;
-  }
-  .pricing-card .buy-row {
-    display: flex;
-    gap: 12px;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 6px;
-  }
-  .pricing-card .buy-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 13px 26px;
-    background: var(--accent);
-    color: #fff;
-    text-decoration: none;
-    border-radius: 10px;
-    font-weight: 600;
-    font-size: 14.5px;
-    transition: all 0.15s ease;
-    box-shadow: 0 4px 18px rgba(139, 109, 255, 0.35);
-  }
-  .pricing-card .buy-btn:hover {
-    background: #9C82FF;
-    transform: translateY(-1px);
-    box-shadow: 0 6px 22px rgba(139, 109, 255, 0.5);
-  }
-  .pricing-card .buy-btn.secondary {
-    background: transparent;
-    color: var(--accent);
-    border: 1px solid rgba(139, 109, 255, 0.5);
-    box-shadow: none;
-  }
-  .pricing-card .buy-btn.secondary:hover {
-    background: rgba(139, 109, 255, 0.1);
-  }
-  .pricing-card .fineprint {
-    margin: 20px auto 0;
-    max-width: 460px;
-    color: var(--text-dim);
-    font-size: 12.5px;
-    line-height: 1.6;
-  }
-
-  /* ── Tier comparison grid (3 plans) ───────────────────────── */
-  .tier-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
-    max-width: 600px;
-    margin: 30px auto 8px;
-    align-items: stretch;
-  }
-  .tier {
-    background: var(--bg-panel);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    padding: 26px 16px 22px;
-    text-align: center;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: border-color 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
-  }
-  .tier:hover {
-    border-color: rgba(139, 109, 255, 0.5);
-    transform: translateY(-4px);
-    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.32);
-  }
-  .tier .tier-name {
-    color: var(--text-dim);
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 1.4px;
-    text-transform: uppercase;
-    margin-bottom: 14px;
-  }
-  .tier .tier-price {
-    font-size: 34px;
-    font-weight: 800;
-    color: var(--text-primary);
-    letter-spacing: -0.5px;
-    line-height: 1;
-  }
-  .tier .tier-price .currency {
-    font-size: 17px;
-    vertical-align: top;
-    color: var(--text-second);
-    font-weight: 600;
-    margin-right: 2px;
-  }
-  .tier .tier-unit {
-    color: var(--text-second);
-    font-size: 12.5px;
-    margin-top: 8px;
-    min-height: 16px;
-  }
-  .tier .tier-save {
-    margin-top: auto;
-    font-size: 11px;
-    color: var(--accent);
-    font-weight: 700;
-    letter-spacing: 0.3px;
-    padding: 5px 12px;
-    border-radius: 999px;
-    background: rgba(139, 109, 255, 0.12);
-  }
-  .tier.featured {
-    border-color: var(--accent);
-    background: linear-gradient(180deg, rgba(139, 109, 255, 0.18), rgba(139, 109, 255, 0.04));
-    box-shadow: 0 12px 34px rgba(139, 109, 255, 0.28);
-    transform: scale(1.05);
-    z-index: 1;
-  }
-  .tier.featured:hover { transform: scale(1.05) translateY(-4px); }
-  .tier.featured .tier-name { color: var(--accent); }
-  .tier.featured .tier-save { background: var(--accent); color: #fff; }
-  .tier .badge {
-    position: absolute;
-    top: -12px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: var(--accent);
-    color: #fff;
-    font-size: 9.5px;
-    font-weight: 700;
-    letter-spacing: 0.8px;
-    padding: 4px 11px;
-    border-radius: 999px;
-    white-space: nowrap;
-    box-shadow: 0 4px 14px rgba(139, 109, 255, 0.5);
-  }
-  @media (max-width: 760px) {
-    .tier-grid {
-      grid-template-columns: 1fr;
-      max-width: 320px;
-      gap: 18px;
-    }
-    .tier.featured { transform: none; order: -1; }
-    .tier.featured:hover { transform: translateY(-4px); }
-  }
 
 
   @media (max-width: 700px) {
@@ -693,7 +495,6 @@
     </div>
 
     <div class="toc-section">Get started</div>
-    <a href="#pricing">Pricing</a>
     <a href="#install">1. Install &amp; activate</a>
     <a href="#first-launch">2. First launch</a>
 
@@ -734,69 +535,17 @@
          .exe via Releases instantly makes it the live download. -->
     <div class="download-cta">
       <div class="info">
-        <span class="version">v1.1.4</span>
+        <span class="version">v1.1.5</span>
         <h3>Get Aura for Windows</h3>
         <p class="meta"><strong>Windows 11 only</strong> · 124 MB · one-click installer · hardware-bound license</p>
       </div>
       <div class="btn-row">
-        <a class="btn" href="https://github.com/corestack-cs/aura-guide/releases/latest/download/AuraSetup-1.1.4.exe">
+        <a class="btn" href="https://github.com/corestack-cs/aura-guide/releases/latest/download/AuraSetup-1.1.5.exe">
           <span class="arrow">⬇</span>
-          <span>Download AuraSetup-1.1.4.exe</span>
+          <span>Download AuraSetup-1.1.5.exe</span>
         </a>
       </div>
     </div>
-
-    <!-- ─── Pricing ─────────────────────────────────────── -->
-    <section id="pricing" class="pricing-card">
-      <div class="eyebrow">Pricing</div>
-      <div class="price">
-        <span class="currency">$</span>11.50<span class="period"> / month</span>
-      </div>
-      <p class="tagline">One licence, one device. Longer plans save up to&nbsp;44%.</p>
-
-      <div class="tier-grid">
-        <div class="tier">
-          <div class="tier-name">6 months</div>
-          <div class="tier-price"><span class="currency">$</span>69</div>
-          <div class="tier-unit">$11.50&nbsp;/&nbsp;month</div>
-          <div class="tier-save">Save 23%</div>
-        </div>
-        <div class="tier featured">
-          <span class="badge">BEST VALUE</span>
-          <div class="tier-name">12 months</div>
-          <div class="tier-price"><span class="currency">$</span>100</div>
-          <div class="tier-unit">$8.33&nbsp;/&nbsp;month</div>
-          <div class="tier-save">Save 44%</div>
-        </div>
-        <div class="tier">
-          <div class="tier-name">Lifetime</div>
-          <div class="tier-price"><span class="currency">$</span>200</div>
-          <div class="tier-unit">one-time</div>
-          <div class="tier-save">Cheapest&nbsp;past&nbsp;2y</div>
-        </div>
-      </div>
-
-      <ul class="included">
-        <li>Full stealth + Pin cursor — invisible to Zoom, Teams, Meet, OBS</li>
-        <li>All five AI tabs — ChatGPT · Claude · Gemini · Perplexity · Grok</li>
-        <li>Multi-resume profiles, Snap, OCR, Project context, hotkeys</li>
-        <li>Free updates while your licence is active</li>
-        <li>Personal support on Telegram</li>
-      </ul>
-
-      <div class="buy-row">
-        <a class="buy-btn" href="https://t.me/KAZI_STE">
-          <span>Get your licence on Telegram</span>
-        </a>
-      </div>
-
-      <p class="fineprint">
-        Message <strong>@KAZI_STE</strong> on Telegram with the plan you
-        want and we'll walk you through payment (PayPal, crypto, or bank
-        transfer) and issue your key. Licences bind to your device's
-        hardware fingerprint and survive a Windows reinstall.
-      </p>
-    </section>
 
     <!-- 1. Install & activate -->
     <section id="install">
@@ -808,7 +557,7 @@
       <ol class="steps">
         <li>
           <strong>Run the installer.</strong>
-          Double-click <code>AuraSetup-1.1.4.exe</code>. The wizard auto-closes any running Aura instance, copies files to <code>C:\Program Files\Aura\</code>, and registers Start Menu / optional desktop shortcuts.
+          Double-click <code>AuraSetup-1.1.5.exe</code>. The wizard auto-closes any running Aura instance, copies files to <code>C:\Program Files\Aura\</code>, and registers Start Menu / optional desktop shortcuts.
         </li>
         <li>
           <strong>WebView2 runtime check.</strong>
@@ -856,7 +605,7 @@
         <div class="card">
           <div class="icon">🤖</div>
           <h4>AI tab</h4>
-          <p>WebView2 hosting ChatGPT / Claude / Gemini / Perplexity / Grok.</p>
+          <p>WebView2 hosting ChatGPT or Claude.</p>
         </div>
       </div>
       <div class="callout">
@@ -916,17 +665,15 @@
     <section id="ai-pick">
       <h2>6. Pick your AI tab</h2>
       <figure>
-        <img src="images/06-ai-picker.png" alt="Settings → AI &amp; CAPTIONS section showing the AI provider dropdown with ChatGPT / Claude / Gemini / Perplexity / Grok">
-        <figcaption>Settings → AI &amp; CAPTIONS. Pick the service from the dropdown — the next <strong>Start meeting</strong> opens a fresh chat on it.</figcaption>
+        <img src="images/06-ai-picker.png" alt="Settings → AI &amp; CAPTIONS section showing the AI provider options ChatGPT and Claude">
+        <figcaption>Settings → AI &amp; CAPTIONS. Pick the service — the next <strong>Start meeting</strong> opens a fresh chat on it.</figcaption>
       </figure>
-      <p>Open <strong>Settings → AI &amp; CAPTIONS</strong>. Five services are pre-wired:</p>
+      <p>Open <strong>Settings → AI &amp; CAPTIONS</strong>. Two services are supported:</p>
       <ul>
         <li><strong>ChatGPT</strong> — best general-purpose, fastest text injection.</li>
         <li><strong>Claude</strong> — strongest reasoning on long context; good for code review questions.</li>
-        <li><strong>Gemini</strong> — Google account login works through Aura's Edge user-agent.</li>
-        <li><strong>Perplexity</strong> — adds web-search citations to answers.</li>
-        <li><strong>Grok</strong> — alternative.</li>
       </ul>
+      <p>Gemini, Perplexity and Grok were removed in v1.1.5. If one of them was your saved choice, Aura switches you to Claude automatically — pick again in Settings if you prefer ChatGPT.</p>
       <p>Whichever you pick, sign in inside the WebView2 tab once. The session persists between Aura restarts.</p>
       <div class="callout warn">
         <strong>Sign in BEFORE the interview</strong>
@@ -937,14 +684,19 @@
     <!-- 7. Start meeting -->
     <section id="start-meeting">
       <h2>7. Start meeting</h2>
-      <p>Click the big <strong>Start meeting</strong> button in the action bar (or just toggle the active profile from the tray). This:</p>
+      <p>Click the big <strong>Start meeting</strong> button in the action bar. (Picking a profile from the tray only selects it — you still click Start meeting to begin.) This:</p>
       <ol>
         <li>Opens a fresh AI chat on the active service.</li>
         <li>Injects your mode payload — the real-time prompt, notes template, and active resume.</li>
         <li>Primes the answer-style rules (whisper mode by default — interview-style first-person replies, 80-word cap).</li>
         <li>Resets the caption deduplication so the next Answer click sees only what's said from now on.</li>
       </ol>
+      <p>Aura waits for the AI page to finish loading before it sends anything, so the first message can take a few seconds to appear on a slow connection.</p>
       <p>The button flips to <strong>Stop meeting</strong>. Click it any time to end the session — the captions clear and the AI tab stays where it is.</p>
+      <div class="callout warn">
+        <strong>"Resume not sent"?</strong>
+        If the resume can't be delivered, Aura now tells you instead of failing silently — a notification plus a status-bar message. The usual cause is not being signed in to the AI tab. Sign in, then click Start meeting again. Details are written to <code>%LOCALAPPDATA%\Aura\logs</code>.
+      </div>
     </section>
 
     <!-- 8. Answer -->
@@ -1178,7 +930,7 @@
 
     <hr class="soft">
     <p style="color: var(--text-dim); font-size: 13px; text-align: center; margin-top: 24px;">
-      Aura — version 1.1.4 · last updated 2026
+      Aura — version 1.1.5 · last updated 2026
     </p>
 
   </main>
