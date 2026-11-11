@@ -531,18 +531,19 @@
          always serves the asset from the newest release, so this
          button never has to be re-edited when a new version ships.
          The repo name (aura-guide) doubles as the docs host AND
-         the release-asset host — uploading a new AuraSetup-N.N.N
-         .exe via Releases instantly makes it the live download. -->
+         the release-asset host — uploading a new Aura-N.N.N.exe
+         via Releases instantly makes it the live download.
+         (v1.1.5+ ships as a portable single .exe, no installer.) -->
     <div class="download-cta">
       <div class="info">
-        <span class="version">v1.1.4</span>
+        <span class="version">v1.1.5</span>
         <h3>Get Aura for Windows</h3>
-        <p class="meta"><strong>Windows 11 only</strong> · 124 MB · one-click installer · hardware-bound license</p>
+        <p class="meta"><strong>Windows 11 only</strong> · 108 MB · portable — no install needed · hardware-bound license</p>
       </div>
       <div class="btn-row">
-        <a class="btn" href="https://github.com/orbitdev-swe/aura-guide/releases/latest/download/AuraSetup-1.1.4.exe">
+        <a class="btn" href="https://github.com/orbitdev-swe/aura-guide/releases/latest/download/Aura-1.1.5.exe">
           <span class="arrow">⬇</span>
-          <span>Download AuraSetup-1.1.4.exe</span>
+          <span>Download Aura-1.1.5.exe</span>
         </a>
       </div>
     </div>
@@ -556,12 +557,12 @@
       </figure>
       <ol class="steps">
         <li>
-          <strong>Run the installer.</strong>
-          Double-click <code>AuraSetup-1.1.4.exe</code>. The wizard auto-closes any running Aura instance, copies files to <code>C:\Program Files\Aura\</code>, and registers Start Menu / optional desktop shortcuts.
+          <strong>Put Aura somewhere permanent.</strong>
+          <code>Aura-1.1.5.exe</code> is a single portable file — no installer, and nothing else to download (the .NET runtime, ffmpeg and every other component are inside it). Move it out of <em>Downloads</em> into a folder you'll keep, e.g. <code>C:\Tools\Aura\</code>, then double-click it. The first start takes a few extra seconds while it unpacks.
         </li>
         <li>
-          <strong>WebView2 runtime check.</strong>
-          The installer verifies Microsoft Edge WebView2 Runtime is present (it ships with Windows 11). If it's missing, the installer opens the official download page.
+          <strong>WebView2 runtime.</strong>
+          Aura's AI tab needs Microsoft Edge WebView2 Runtime, which ships with Windows 11. If it's missing, Aura shows an error at startup — install it free from Microsoft's WebView2 download page and start Aura again.
         </li>
         <li>
           <strong>Launch Aura.</strong>
@@ -572,6 +573,10 @@
           Aura prompts you to save a backup of your license file. Keep it somewhere safe — you'll need it if you reinstall Windows or move to a new machine.
         </li>
       </ol>
+      <div class="callout">
+        <strong>Upgrading from v1.1.4 or earlier</strong>
+        Right-click the tray icon → <strong>Exit</strong>. Then replace <code>%LOCALAPPDATA%\Aura\Aura.exe</code> with the new file (rename <code>Aura-1.1.5.exe</code> to <code>Aura.exe</code>). Your license, modes, resumes, settings, shortcuts and auto-start all carry over.
+      </div>
       <div class="callout warn">
         <strong>Hardware-bound license</strong>
         Your key is tied to this PC's fingerprint (CPU + disk + BIOS). Re-activating on a different machine consumes a new activation slot. Keep the backup <code>.lic</code> file — re-installing on the SAME machine reuses it automatically.
@@ -930,7 +935,7 @@
 
     <hr class="soft">
     <p style="color: var(--text-dim); font-size: 13px; text-align: center; margin-top: 24px;">
-      Aura — version 1.1.4 · last updated 2026
+      Aura — version 1.1.5 · last updated 2026
     </p>
 
   </main>
