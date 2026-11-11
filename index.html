@@ -536,14 +536,14 @@
          (v1.1.5+ ships as a portable single .exe, no installer.) -->
     <div class="download-cta">
       <div class="info">
-        <span class="version">v1.1.5</span>
+        <span class="version">v1.1.6</span>
         <h3>Get Aura for Windows</h3>
         <p class="meta"><strong>Windows 11 only</strong> · 108 MB · portable — no install needed · hardware-bound license</p>
       </div>
       <div class="btn-row">
-        <a class="btn" href="https://github.com/orbitdev-swe/aura-guide/releases/latest/download/Aura-1.1.5.exe">
+        <a class="btn" href="https://github.com/orbitdev-swe/aura-guide/releases/latest/download/Aura-1.1.6.exe">
           <span class="arrow">⬇</span>
-          <span>Download Aura-1.1.5.exe</span>
+          <span>Download Aura-1.1.6.exe</span>
         </a>
       </div>
     </div>
@@ -558,7 +558,7 @@
       <ol class="steps">
         <li>
           <strong>Put Aura somewhere permanent.</strong>
-          <code>Aura-1.1.5.exe</code> is a single portable file — no installer, and nothing else to download (the .NET runtime, ffmpeg and every other component are inside it). Move it out of <em>Downloads</em> into a folder you'll keep, e.g. <code>C:\Tools\Aura\</code>, then double-click it. The first start takes a few extra seconds while it unpacks.
+          <code>Aura-1.1.6.exe</code> is a single portable file — no installer, and nothing else to download (the .NET runtime, ffmpeg and every other component are inside it). Move it out of <em>Downloads</em> into a folder you'll keep, e.g. <code>C:\Tools\Aura\</code>, then double-click it. The first start takes a few extra seconds while it unpacks.
         </li>
         <li>
           <strong>WebView2 runtime.</strong>
@@ -574,8 +574,8 @@
         </li>
       </ol>
       <div class="callout">
-        <strong>Upgrading from v1.1.4 or earlier</strong>
-        Right-click the tray icon → <strong>Exit</strong>. Then replace <code>%LOCALAPPDATA%\Aura\Aura.exe</code> with the new file (rename <code>Aura-1.1.5.exe</code> to <code>Aura.exe</code>). Your license, modes, resumes, settings, shortcuts and auto-start all carry over.
+        <strong>Upgrading from an earlier version</strong>
+        Right-click the tray icon → <strong>Exit</strong>. Then replace <code>%LOCALAPPDATA%\Aura\Aura.exe</code> with the new file (rename <code>Aura-1.1.6.exe</code> to <code>Aura.exe</code>). Your license, modes, resumes, settings, shortcuts and auto-start all carry over — including your stealth setting, so an upgraded install stays in stealth if it was on.
       </div>
       <div class="callout warn">
         <strong>Hardware-bound license</strong>
@@ -614,8 +614,8 @@
         </div>
       </div>
       <div class="callout">
-        <strong>Stealth is on by default</strong>
-        Aura's window is excluded from Zoom / Teams / Meet / OBS capture out of the box. Toggle via the eye icon in the titlebar or <kbd>Alt</kbd>+<kbd>E</kbd>.
+        <strong>Stealth is off by default</strong>
+        A fresh install starts visible, so Aura shows up normally in screen shares and remote-desktop tools such as AnyDesk. Turn stealth on before an interview with the eye icon in the titlebar or <kbd>Alt</kbd>+<kbd>E</kbd> — Aura remembers your choice.
       </div>
     </section>
 
@@ -790,7 +790,7 @@
       <p>Toggle with the <strong>eye icon</strong> in the titlebar or <kbd>Alt</kbd>+<kbd>E</kbd>:</p>
       <ul>
         <li><strong>Stealth ON</strong> — the eye icon glows green. The window is invisible to capture. The cursor cloak is active (see Pin cursor below).</li>
-        <li><strong>Stealth OFF</strong> — the eye icon is dim. The window is normally visible. Use this for demos or troubleshooting.</li>
+        <li><strong>Stealth OFF</strong> (the default) — the eye icon is dim. The window is normally visible, including over AnyDesk or other remote-desktop tools. Use this for setup, demos or troubleshooting.</li>
       </ul>
       <div class="callout warn">
         <strong>Test before the real interview</strong>
@@ -935,7 +935,7 @@
 
     <hr class="soft">
     <p style="color: var(--text-dim); font-size: 13px; text-align: center; margin-top: 24px;">
-      Aura — version 1.1.5 · last updated 2026
+      Aura — version 1.1.6 · last updated 2026
     </p>
 
   </main>
